@@ -1,4 +1,4 @@
-# Lab Report: Wazuh Endpoint Agent Installation, Infiltration, and SIEM Enrollment
+# Wazuh Endpoint Agent Installation, Infiltration, and SIEM Enrollment
 
 * **Date of Operation:** September 21, 2026
 * **SIEM Management Interface IP:** `192.168.6.133`
