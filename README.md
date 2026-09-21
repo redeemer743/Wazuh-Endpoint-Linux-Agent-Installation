@@ -25,12 +25,9 @@ The enrollment interface compiled these structural configurations into a single 
 ```bash
 wget https://wazuh.com && sudo WAZUH_MANAGER='192.168.6.133' WAZUH_AGENT_NAME='Linux_Mint' dpkg -i ./wazuh-agent_4.14.7-1_amd64.deb
 ```
-
-[IMAGE PLACEHOLDER: image_wCZyBh.png - Wazuh Deploy New Agent Wizard configuration screen highlighting selection of Linux DEB package and assignment of manager address 192.168.6.133]
-
-[IMAGE PLACEHOLDER: image_4zFhoh.png - Wazuh Optional Settings layout displaying the custom agent name specification input block designated as Linux_Mint]
-
-[IMAGE PLACEHOLDER: image_VhQ9Nu.png - Generated command matrix inside Wazuh Dashboard showing the explicit wget string and systemctl service start procedures]
+![Figure 1: Linux / DEB amd64](images/1.png)
+![Figure 2: Linux_Mint](images/2.png)
+![Figure 3: wget](images/3.png)
 
 ---
 
@@ -51,9 +48,8 @@ To confirm the local collector engine was up and running, a status audit was per
 * **Memory Utilization Baseline:** Running within a safe footprint of `81.3M`.
 * **Active Working Workers:** Spun up four key processing engines: `wazuh-execd`, `wazuh-agentd`, `wazuh-syscheckd`, and `wazuh-logcollector`.
 
-[IMAGE PLACEHOLDER: image_ZaURA4.png - Linux Mint bash terminal output panel confirming active running status of wazuh-agent service with PID 7799 and active thread components]
-
 ---
+![Figure 4: wget](images/4.png)
 
 ## 4. SIEM Server Console Enrollment Verification
 Following client execution, web validation checks were conducted by loading the manager UI framework at `https://192.168.6.133`.
@@ -61,11 +57,13 @@ Following client execution, web validation checks were conducted by loading the 
 ### A. Agents Dashboard Telemetry Summary
 Prior to performing the remote endpoint script installation steps, the central monitoring portal registered an entirely unmanaged host state:
 
-[IMAGE PLACEHOLDER: image_mqJfxB.png - Empty Wazuh Dashboard baseline interface stating that the instance has no agents registered and prompting deployment]
+
+![Figure 7: wget](images/7.png)
 
 Following successful deployment of the client collectors, the total agent metrics immediately refreshed across the central dashboard layout:
 
-[IMAGE PLACEHOLDER: image_KFyQtn.png - Updated Wazuh Main Dashboard console revealing one active connected agent and tracking 43 medium severity security events]
+
+![Figure 5: wget](images/5.png)
 
 ### B. Analytical Asset Grid Verification
 Navigating straight to the system `/endpoints-summary/` dashboard table confirms the exact agent properties parsed by the manager engine:
@@ -76,7 +74,8 @@ Navigating straight to the system `/endpoints-summary/` dashboard table confirms
 * **Core Agent Software Version:** `v4.14.7`
 * **Real-Time Operational Standing:** **`● active`**
 
-[IMAGE PLACEHOLDER: image_5faXbA.png - Wazuh Endpoints registry table detailing the row tracking record for Agent 001 with active status verification under Linux Mint 22.3]
+
+![Figure 6: wget](images/6.png)
 
 ---
 
